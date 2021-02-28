@@ -21,7 +21,7 @@ print("Helo Rosa:", bot.respond("Helo Rosa"))
 print("HY troll!:", bot.respond("HY troll!"))
 print("WHAT IS UP troll!:", bot.respond("WHAT IS UP troll!"))
 print("hello **troll** !!!:", bot.respond("hello **troll** !!!"))
-print("hello !!! troll!!!:", bot.respond("hello !!!troll!!!"))
+print("hello !! troll!!!:", bot.respond("hello !!!troll!!!"))
 
 # 使用<random>标签来帮助机器人在回复问候时显得更有创意一点儿
 # 每次匹配模式时，它都会从列表中随机选择一个回复，无法在 aiml_bot 中设置随机种子
