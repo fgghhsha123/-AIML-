@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+<!--
+在 AIML 2.0 中，可以使用方括号列表来指定选择随机响应模板。而在 AIML 1.0 中，使用<li>
+标签来执行此操作。<li>标签仅在<condition>或<random>标签内部使用。可以使用
+<random>标签来帮助机器人在回复问候时显得更有创意一点儿,看起来不那么机械
+-->
+<category>
+	<pattern>HELLO ROSA </pattern>
+	<template> 
+		<random> 
+			<li>Hi Human!</li> 
+			<li>Hello friend</li>
+			<li>Hi pal</li> 
+			<li>Hi!</li> 
+			<li>Hello!</li> 
+			<li>Hello to you too!</li> 
+			<li>Greetings Earthling ;)</li> 
+			<li>Hey you :)</li> 
+			<li>Hey you!</li> 
+		</random>
+	</template> 
+</category> 
+<category>
+	<pattern>HELLO TROLL </pattern>
+	<template> 
+		<random> 
+			<li>Good one, Human.</li> 
+			<li>Good one.</li> 
+			<li>Nice one, Human.</li> 
+			<li>Nice one.</li> 
+			<li>Clever.</li> 
+			<li>:)</li> 
+		</random>
+	</template> 
+</category>
+</aiml>

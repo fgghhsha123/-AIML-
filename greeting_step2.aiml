@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1"> 
+<!--使用模板中的<srai>标签和星号（*），将多个模式链接到同一个响应模板，以解-->
+<!--决大部分匹配遗漏的问题。我们将这些模式视为“Hello”的同义词，即使它们可能是拼写错误或完全不同的词-->
+
+<!--<star>标签用于匹配<pattern>标签中的通配符*字符-->
+<category>
+	<pattern>HELO * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category> 
+<category>
+	<pattern>HI * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category> 
+<category>
+	<pattern>HIYA * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category>
+<category>
+	<pattern>HYA * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category> 
+<category>
+	<pattern>HY * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category> 
+<category>
+	<pattern>HEY * </pattern>
+	<template><srai>HELLO <star/> </srai></template>
+</category> 
+<category>
+	<pattern>WHATS UP * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category> 
+<category>
+	<pattern>WHAT IS UP * </pattern>
+	<template><srai>HELLO <star/></srai></template>
+</category>
+</aiml>
